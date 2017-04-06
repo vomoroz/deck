@@ -45,10 +45,10 @@
       TERM Grace Period
       <help-field key="kubernetes.serverGroup.terminationGracePeriodSeconds"></help-field>
     </div>
-    <div class="col-md-7"><input type="text"
+    <div class="col-md-7"><input type="number" min="0"
                                  class="form-control input-sm"
                                  name="terminationGracePeriodSeconds"
-                                 ng-model="command.terminationGracePeriodSeconds"/></div>
+                                 ng-model="command.terminationGracePeriodSeconds" required/></div>
   </div>
 
   <div class="col-md-12" ng-if="command.viewState.dirty.containers">
