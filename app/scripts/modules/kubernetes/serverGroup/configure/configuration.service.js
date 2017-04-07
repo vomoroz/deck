@@ -113,7 +113,6 @@ module.exports = angular.module('spinnaker.serverGroup.configure.kubernetes.conf
           command: [],
           args: [],
           volumeMounts: [],
-          terminationGracePeriodSeconds: 30
         };
       };
     }
